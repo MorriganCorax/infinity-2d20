@@ -1,3 +1,121 @@
 {
-    
+    "Actor": {
+        "types": [
+            "npc"
+        ],
+        "templates": {
+            "pools": {
+                "quantronic": {
+                    "firewall": {
+                        "max": 0,
+                        "value": 0,
+                        "breaches": []
+                    },
+                    "security": 0
+                },
+                "social": {
+                    "resolve": {
+                        "max": 0,
+                        "value": 0,
+                        "breaches": []
+                    },
+                    "morale": 0
+                },
+                "health": {
+                    "vigour": {
+                        "max": 0,
+                        "value": 0,
+                        "breaches": []
+                    },
+                    "armour": 0
+                }
+            },
+            "attributes": {
+                "agi": {
+                    "base": 7,
+                    "body_mod": 0,
+                    "training_mod": 0,
+                    "superhuman_level": 0,
+                    "value": 0
+                },
+                "awa": {
+                    "base": 7,
+                    "body_mod": 0,
+                    "training_mod": 0,
+                    "superhuman_level": 0,
+                    "value": 0
+                },
+                "brw": {
+                    "base": 7,
+                    "body_mod": 0,
+                    "training_mod": 0,
+                    "superhuman_level": 0,
+                    "value": 0
+                },
+                "coo": {
+                    "base": 7,
+                    "body_mod": 0,
+                    "training_mod": 0,
+                    "superhuman_level": 0,
+                    "value": 0
+                },
+                "int": {
+                    "base": 7,
+                    "body_mod": 0,
+                    "training_mod": 0,
+                    "superhuman_level": 0,
+                    "value": 0
+                },
+                "per": {
+                    "base": 7,
+                    "body_mod": 0,
+                    "training_mod": 0,
+                    "superhuman_level": 0,
+                    "value": 0
+                },
+                "wil": {
+                    "base": 7,
+                    "body_mod": 0,
+                    "training_mod": 0,
+                    "superhuman_level": 0,
+                    "value": 0
+                }
+            }
+        },
+        "npc": {
+            "templates": [
+                "attributes"
+            ],
+            "category": "",
+            "expertises": {
+                "combat": {
+                    "skill": 0,
+                    "focus": 0
+                },
+                "movement": {
+                    "skill": 0,
+                    "focus": 0
+                },
+                "social": {
+                    "skill": 0,
+                    "focus": 0
+                },
+                "fortitude": {
+                    "skill": 0,
+                    "focus": 0
+                },
+                "senses": {
+                    "skill": 0,
+                    "focus": 0
+                },
+                "technical": {
+                    "skill": 0,
+                    "focus": 0
+                }
+            }
+        }
+    },
+    "Item": {
+        "types": []
+    }
 }
