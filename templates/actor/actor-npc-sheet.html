@@ -1,4 +1,4 @@
-<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+<form class="{{cssClass}} {{actor.type}}" autocomplete="off">
 
     {{!-- Sheet Header --}}
     <header class="sheet-header">
@@ -22,7 +22,10 @@
     {{!-- Sheet Body --}}
     <section class="sheet-body">
 
-
+        {{!-- Description Tab --}}
+        <div class="tab description" data-group="primary" data-tab="description">
+            {{editor descriptionHTML target="system.description" button=true editable=editable engine="prosemirror"}}
+        </div>
 
         {{!-- Characteristics Tab --}}
         <div class="tab characteristics" data-group="primary" data-tab="characteristics">
@@ -36,26 +39,31 @@
                     </div>
                 {{/each}}
             </div>
-        </div>
-        <hr />
 
-        <div class="label-expertises grid grid-1col flexrow">
-            <label>Fields of Expertise</label>
-        </div>
-        <div class="expertises grid grid-3col flexrow">
-            {{#each system.expertises as |expertise key|}}
-                <div class="expertise flexcol flex-group-center">
-                    <label for="system.expertises.{{key}}.skill" class="expertise-label">{{key}}</label>
-                    <div class="expertise-field flexrow grid-3col">
-                        <input type="text" name="system.expertises.{{key}}.skill" value="{{expertise.skill}}"
-                            data-dtype="Number" />
-                        <label for="system.expertises.{{key}}.focus" class="expertise-label">/ +</label>
-                        <input type="text" name="system.expertises.{{key}}.focus" value="{{expertise.focus}}"
-                            data-dtype="Number" />
+            <hr />
+
+            <div class="label-expertises">
+                <label>Fields of Expertise</label>
+            </div>
+            <div class="expertises grid grid-3col flexrow">
+                {{#each system.expertises as |expertise key|}}
+                    <div class="expertise flexcol flex-group-center">
+                        <label for="system.expertises.{{key}}.skill" class="expertise-label">{{key}}</label>
+                        <div class="expertise-field flexrow flex-group-center grid grid-3col">
+                            <input type="text" name="system.expertises.{{key}}.skill" value="{{expertise.skill}}"
+                                data-dtype="Number" />
+                            <label for="system.expertises.{{key}}.focus" class="focus-separator">/ +</label>
+                            <input type="text" name="system.expertises.{{key}}.focus" value="{{expertise.focus}}"
+                                data-dtype="Number" />
+                        </div>
                     </div>
-                </div>
-            {{/each}}
+                {{/each}}
+            </div>
+
         </div>
+        
+
+        
 
     </section>
 </form>

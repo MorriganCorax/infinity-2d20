@@ -48,6 +48,7 @@ export class InfinityActorSheet extends ActorSheet {
         // Prepare NPC data and items.
         if (actorData.type == 'npc') {
             this._prepareItems(context);
+            this._prepareNpcData(context);
         }
 
         // Add roll data for TinyMCE editors.
@@ -55,7 +56,8 @@ export class InfinityActorSheet extends ActorSheet {
 
         // Prepare active effects
         context.effects = prepareActiveEffectCategories(this.actor.effects);
-
+        
+        console.log(context);
         return context;
     }
 
@@ -69,6 +71,28 @@ export class InfinityActorSheet extends ActorSheet {
     _prepareCharacterData(context) {
         // Handle ability scores.
 
+    }
+
+    /**
+     * Organize and classify Items for Npc sheets.
+     *
+     * @param {Object} actorData The actor to prepare.
+     *
+     * @return {undefined}
+     */
+    async _prepareNpcData(context) {
+        const actorData = this.actor.toObject(false);
+        // Handle ability scores.
+        for (let [k, v] of Object.entries(context.system.attributes)) {
+            v.label = game.i18n.localize(CONFIG.INFINITY2D20.attributes[k]) ?? CONFIG.INFINITY2D20.attributes[k];
+        }
+
+        // Enrich HTML description
+        context.descriptionHTML = await TextEditor.enrichHTML(actorData.system.description, {
+            secrets: actorData.isOwner,
+            async: true,
+            relativeTo: this.actor
+        });
     }
 
     /**
