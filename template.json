@@ -1,6 +1,7 @@
 {
     "Actor": {
         "types": [
+            "character",
             "npc"
         ],
         "templates": {
@@ -113,6 +114,11 @@
                     "focus": 0
                 }
             }
+        },
+        "character": {
+            "templates": [
+                "attributes"
+            ]
         }
     },
     "Item": {

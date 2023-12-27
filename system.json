@@ -1,38 +1,30 @@
 {
-    "id": "infinity2d20",
-    "title": "Modiphius Infinity 2d20",
-    "description": "A Foundry system for Infinity 2d20 by Modiphius",
-    "version": "0.0.3",
-    "compatibility": {
-      "minimum": "11",
-      "verified": "11"
-    },
-    "authors": [
-      {
-        "name": "MorriganCorax",
-        "discord": "MorriganCorax"
-      }
-    ],
-    "scripts": [
-
-    ],
-    "esmodules": [
-      "module/infinity2d20.mjs"
-    ],
-    "styles": [
-      
-    ],
-    "packs": [
-      
-    ],
-  "languages": [
-      
-    ],
-    "socket": false,
-    "initiative": "20",
-    "gridDistance": 10,
-    "gridUnits": "ft",
-    "url": "https://github.com/MorriganCorax/infinity2d20",
-    "manifest": "https://github.com/MorriganCorax/infinity2d20/blob/main/system.json",
-    "download": "https://github.com/MorriganCorax/infinity2d20/archive/refs/heads/main.zip"
-  }
+  "id": "infinity2d20",
+  "title": "Modiphius Infinity 2d20",
+  "description": "A Foundry system for Infinity 2d20 by Modiphius",
+  "version": "0.0.8",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "authors": [
+    {
+      "name": "MorriganCorax",
+      "discord": "MorriganCorax"
+    }
+  ],
+  "scripts": [],
+  "esmodules": [
+    "module/infinity2d20.mjs"
+  ],
+  "styles": [],
+  "packs": [],
+  "languages": [],
+  "socket": false,
+  "initiative": "20",
+  "gridDistance": 10,
+  "gridUnits": "ft",
+  "url": "https://github.com/MorriganCorax/infinity2d20",
+  "manifest": "https://github.com/MorriganCorax/infinity2d20/blob/main/system.json",
+  "download": "https://github.com/MorriganCorax/infinity2d20/archive/refs/heads/main.zip"
+}
