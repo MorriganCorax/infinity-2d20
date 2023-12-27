@@ -87,7 +87,10 @@
             "templates": [
                 "attributes"
             ],
-            "category": "",
+            "category": {
+                "value": "trooper",
+                "list":{"trooper":"Trooper", "elite":"Elite", "nemesis":"Nemesis"}
+            },
             "expertises": {
                 "combat": {
                     "skill": 0,
