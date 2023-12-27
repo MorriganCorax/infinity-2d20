@@ -1,0 +1,11 @@
+.attribute-label {
+    text-transform: uppercase;
+}
+
+.expertise-label {
+    text-transform: capitalize;
+}
+
+.npc .expertises .expertise {
+    border: 1px grey solid;
+}

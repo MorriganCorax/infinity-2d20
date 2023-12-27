@@ -31,65 +31,98 @@
                     "armour": 0
                 }
             },
-            "attributes": {
-                "agi": {
-                    "base": 7,
-                    "body_mod": 0,
-                    "training_mod": 0,
-                    "superhuman_level": 0,
-                    "value": 0
-                },
-                "awa": {
-                    "base": 7,
-                    "body_mod": 0,
-                    "training_mod": 0,
-                    "superhuman_level": 0,
-                    "value": 0
-                },
-                "brw": {
-                    "base": 7,
-                    "body_mod": 0,
-                    "training_mod": 0,
-                    "superhuman_level": 0,
-                    "value": 0
-                },
-                "coo": {
-                    "base": 7,
-                    "body_mod": 0,
-                    "training_mod": 0,
-                    "superhuman_level": 0,
-                    "value": 0
-                },
-                "int": {
-                    "base": 7,
-                    "body_mod": 0,
-                    "training_mod": 0,
-                    "superhuman_level": 0,
-                    "value": 0
-                },
-                "per": {
-                    "base": 7,
-                    "body_mod": 0,
-                    "training_mod": 0,
-                    "superhuman_level": 0,
-                    "value": 0
-                },
-                "wil": {
-                    "base": 7,
-                    "body_mod": 0,
-                    "training_mod": 0,
-                    "superhuman_level": 0,
-                    "value": 0
+            "full-attributes": {
+                "attributes": {
+                    "agi": {
+                        "base": 7,
+                        "body_mod": 0,
+                        "training_mod": 0,
+                        "superhuman_level": 0,
+                        "value": 0
+                    },
+                    "awa": {
+                        "base": 7,
+                        "body_mod": 0,
+                        "training_mod": 0,
+                        "superhuman_level": 0,
+                        "value": 0
+                    },
+                    "brw": {
+                        "base": 7,
+                        "body_mod": 0,
+                        "training_mod": 0,
+                        "superhuman_level": 0,
+                        "value": 0
+                    },
+                    "coo": {
+                        "base": 7,
+                        "body_mod": 0,
+                        "training_mod": 0,
+                        "superhuman_level": 0,
+                        "value": 0
+                    },
+                    "int": {
+                        "base": 7,
+                        "body_mod": 0,
+                        "training_mod": 0,
+                        "superhuman_level": 0,
+                        "value": 0
+                    },
+                    "per": {
+                        "base": 7,
+                        "body_mod": 0,
+                        "training_mod": 0,
+                        "superhuman_level": 0,
+                        "value": 0
+                    },
+                    "wil": {
+                        "base": 7,
+                        "body_mod": 0,
+                        "training_mod": 0,
+                        "superhuman_level": 0,
+                        "value": 0
+                    }
+                }
+            },
+            "simple-attributes": {
+                "attributes": {
+                    "agi": {
+                        "value": 7
+                    },
+                    "awa": {
+                        "value": 7
+                    },
+                    "brw": {
+                        "value": 7
+                    },
+                    "coo": {
+                        "value": 7
+                    },
+                    "int": {
+                        "value": 7
+                    },
+                    "per": {
+                        "value": 7
+                    },
+                    "wil": {
+                        "value": 7
+                    }
                 }
             }
         },
         "npc": {
             "templates": [
-                "attributes"
+                "pools",
+                "simple-attributes"
             ],
+            "description": "",
             "category": {
                 "value": "trooper",
-                "list":{"trooper":"Trooper", "elite":"Elite", "nemesis":"Nemesis"}
+                "list": {
+                    "trooper": "Trooper",
+                    "elite": "Elite",
+                    "nemesis": "Nemesis"
+                }
             },
             "expertises": {
                 "combat": {

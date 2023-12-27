@@ -13,4 +13,49 @@
         </div>
     </header>
 
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="characteristics">Characteristics</a>
+        <a class="item" data-tab="description">Description</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+
+
+        {{!-- Characteristics Tab --}}
+        <div class="tab characteristics" data-group="primary" data-tab="characteristics">
+
+            <div class="attributes grid grid-7col flexrow">
+                {{#each system.attributes as |attribute key|}}
+                    <div class="attribute flexcol flex-group-center">
+                        <label for="system.attributes.{{key}}.value" class="attribute-label">{{key}}</label>
+                        <input type="text" name="system.attributes.{{key}}.value" value="{{attribute.value}}"
+                            data-dtype="Number" />
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+        <hr />
+
+        <div class="label-expertises grid grid-1col flexrow">
+            <label>Fields of Expertise</label>
+        </div>
+        <div class="expertises grid grid-3col flexrow">
+            {{#each system.expertises as |expertise key|}}
+                <div class="expertise flexcol flex-group-center">
+                    <label for="system.expertises.{{key}}.skill" class="expertise-label">{{key}}</label>
+                    <div class="expertise-field flexrow grid-3col">
+                        <input type="text" name="system.expertises.{{key}}.skill" value="{{expertise.skill}}"
+                            data-dtype="Number" />
+                        <label for="system.expertises.{{key}}.focus" class="expertise-label">/ +</label>
+                        <input type="text" name="system.expertises.{{key}}.focus" value="{{expertise.focus}}"
+                            data-dtype="Number" />
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+
+    </section>
 </form>

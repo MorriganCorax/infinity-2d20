@@ -2,7 +2,7 @@
   "id": "infinity2d20",
   "title": "Modiphius Infinity 2d20",
   "description": "A Foundry system for Infinity 2d20 by Modiphius",
-  "version": "0.0.10",
+  "version": "0.0.15",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
@@ -17,7 +17,7 @@
   "esmodules": [
     "module/infinity2d20.mjs"
   ],
-  "styles": [],
+  "styles": ["css/infinity.css"],
   "packs": [],
   "languages": [],
   "socket": false,
